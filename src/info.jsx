@@ -20,6 +20,7 @@ export const sidebarContents = [
   },
   {
     name: "My Works",
+    id: "my-works",
   },
   {
     name: "Resume",
@@ -28,6 +29,7 @@ export const sidebarContents = [
     name: "Contact",
   },
 ];
+export const projectGroup = ["All", "Industrial", "Personal", "Freelance"];
 
 export const projectList = [
   {
@@ -43,7 +45,7 @@ export const projectList = [
   {
     key: 2,
     title: "Genie Arabia",
-    stack: [skillAssets?.node, skillAssets?.react],
+    stack: [skillAssets?.nodejs, skillAssets?.react],
     desc: "Lorem ipsum",
     about: ["Backend Development", "Admin Panel"],
     image: genieWeb,
