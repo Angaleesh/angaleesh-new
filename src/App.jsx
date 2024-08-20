@@ -7,6 +7,7 @@ import Sidebar from "./sections/Sidebar";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import MyWorks from "./sections/MyWorks";
+import Services from "./sections/Services";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <div className="flex flex-col card-grid gap-5 max-lg:w-full">
             <About />
             <Skills />
+            <Services />
             <MyWorks />
           </div>
         </section>

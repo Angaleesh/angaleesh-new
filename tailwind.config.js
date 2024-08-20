@@ -9,7 +9,7 @@ export default {
         coreblack: "#000000",
         gray: "#cfcfcf",
         base: "#f2f5f8",
-        slate: "#787878",
+        slate: "#838485",
       },
       backgroundImage: {
         hero: "url(assets/images/herobg.png)",
@@ -17,6 +17,7 @@ export default {
       boxShadow: {
         xl: "0px -1px 30px 4px rgba(0,0,0,0.05)",
         lg: "-1px 15px 26px -4px rgba(161,151,151,0.15)",
+        ms: "rgba(0, 0, 0, 0.1) 0px 10px 50px",
       },
       keyframes: {
         bgLine: {
