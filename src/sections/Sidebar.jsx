@@ -6,7 +6,7 @@ const Sidebar = () => {
   const [fixed, setFixed] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = () => { 
       if (window.scrollY > 100) {
         setFixed(true);
       } else {
