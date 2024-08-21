@@ -37,16 +37,23 @@ const Contact = () => {
       </p>
       <div className="flex flex-wrap gap-2 text-slate   ">
         {baseDetails.map((item, index) => (
-          <div
+          <a
+            href={item?.href}
             className="flex justify-between items-center gap-2 px-4 py-1 border-dotted border rounded-full"
             key={index}
           >
             {item?.icon}
-            <p className="text-sm leading-relaxed tracking-wide">{item?.value}</p>
-          </div>
+            <p className="text-sm leading-relaxed tracking-wide">
+              {item?.value}
+            </p>
+          </a>
         ))}
       </div>
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-10 mt-10">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-col gap-10 mt-10"
+      >
         <div className="flex w-full gap-5">
           <input
             name={"from_name"}
@@ -74,11 +81,9 @@ const Contact = () => {
           placeholder="Message"
           className="input h-36"
         />
-        <button
-          value={"submit"}
-          type={"submit"}
-          className={"w-40 h-10 button"}
-        >Submit</button>
+        <button value={"submit"} type={"submit"} className={"w-40 h-10 button"}>
+          Submit
+        </button>
       </form>
     </div>
   );

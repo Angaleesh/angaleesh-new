@@ -437,10 +437,12 @@ export const serviceContent = [
 export const baseDetails = [
   {
     icon: <i className="fi fi-rr-phone-flip"></i>,
+    href: "tel:7397687841",
     value: "+91 7397687841",
   },
   {
     icon: <i className="fi fi-rr-at"></i>,
+    href: "mailto:agr.angaleesh@gmail.com",
     value: "agr.angaleesh@gmail.com",
   },
   {

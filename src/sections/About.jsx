@@ -1,6 +1,7 @@
 import React from "react";
 import profile from "./../assets/Profile.jpg";
 import { badges, major } from "../info.jsx";
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="card w-full flex flex-col gap-5" id="about">
@@ -23,6 +24,13 @@ const About = () => {
           </h2>
           <h6 className="section-heading">
             Full Stack Developer. <br /> MERN
+            <a
+              href="https://drive.usercontent.google.com/u/0/uc?id=1dcEAza2GmYF56GQ8DnJngrfYLCJ915ot&export=download"
+              className="text-sm ml-5 "
+            >
+              Resume
+              <i class="fi fi-bs-cloud-download ml-1 rounded "></i>
+            </a>
           </h6>
           <div className="flex gap-5 text-slate flex-wrap">
             {major.map((item, index) => (
