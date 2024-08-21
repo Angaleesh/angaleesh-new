@@ -98,8 +98,11 @@ p {
 
 @media screen and (max-width: 1023px) {
   .nav-link > span:before {
-    border: none;
+    /* border: none; */
     display: none;
+  }
+  .active-tab > span:before {
+    display: block;
   }
 }
 /* .active-tab>span {
@@ -141,7 +144,7 @@ p {
   .input {
     @apply border-b-[1px] border-dashed pb-2 text-slate;
   }
-  .input:focus-visible{
+  .input:focus-visible {
     @apply border-b-[1px] border-dashed pb-2 text-black outline-none;
   }
 }
