@@ -6,7 +6,7 @@ const Sidebar = () => {
   const [fixed, setFixed] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => { 
+    const handleScroll = () => {
       if (window.scrollY > 100) {
         setFixed(true);
       } else {
@@ -24,7 +24,7 @@ const Sidebar = () => {
   return (
     <aside
       className={` ${
-        fixed && `fixed top-0 z-[999] w-[95%] `
+        fixed && `max-lg:fixed top-8 max-lg:z-[999] max-lg:w-[95%] `
       }`}
     >
       <div className="card sticky top-8 bg-coreblack p-8 flex lg:flex-col h-80 justify-between w-64 max-lg:w-full max-lg:h-16">
