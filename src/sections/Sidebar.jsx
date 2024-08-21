@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { sidebarContents } from "../info.jsx";
 import { Link } from "react-scroll";
 
 const Sidebar = () => {
+  const [fixed, setFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setFixed(true);
+      } else {
+        setFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <aside className="max-lg:w-full">
+    <aside
+      className={` ${
+        fixed && `fixed top-0 z-[999] w-[95%] `
+      }`}
+    >
       <div className="card sticky top-8 bg-coreblack p-8 flex lg:flex-col h-80 justify-between w-64 max-lg:w-full max-lg:h-16">
         {sidebarContents.map((item, index) => (
           <Link

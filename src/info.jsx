@@ -1,4 +1,4 @@
-import albionWeb from "./assets/projects/albion-web.png";
+import albionWeb from "./assets/projects/wall360.png";
 import genieWeb from "./assets/projects/genie-web.png";
 import bankWeb from "./assets/projects/bank-web.png";
 import medbay from "./assets/projects/medbay.png";
@@ -25,6 +25,7 @@ export const sidebarContents = [
   },
   {
     name: "Services",
+    id: "services",
   },
   {
     name: "My Works",
@@ -32,9 +33,11 @@ export const sidebarContents = [
   },
   {
     name: "Resume",
+    id: "resume",
   },
   {
     name: "Contact",
+    id: "contact",
   },
 ];
 export const projectGroup = ["All", "Industrial", "Personal", "Freelance"];
@@ -405,28 +408,59 @@ export const serviceContent = [
     key: 1,
     count: "01",
     title: "Frontend Development",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    icon: <i class="fi fi-rr-display-code"></i>,
+    desc: "Craft visually stunning and highly interactive user interfaces using modern frameworks like React, ensuring seamless user experiences across all devices.",
+    icon: <i className="fi fi-rr-display-code"></i>,
   },
   {
     key: 2,
     count: "02",
     title: "Backend Development",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    icon: <i class="fi fi-ss-database"></i>,
+    desc: "Develop robust and scalable backend systems using Node.js, Express, and MongoDB, ensuring reliable data management and efficient server-side logic.",
+    icon: <i className="fi fi-ss-database"></i>,
   },
   {
     key: 3,
     count: "03",
     title: "Cloud Deployment",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    icon: <i class="fi fi-tr-cloud-back-up"></i>,
+    desc: "Deploy and manage applications on cloud platforms like AWS, leveraging services for storage, computing, and monitoring to ensure high availability and security.",
+    icon: <i className="fi fi-tr-cloud-back-up"></i>,
   },
   {
     key: 4,
     count: "04",
     title: "Testing and User Experience",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    icon: <i class="fi fi-ts-quiz-alt"></i>,
+    desc: "Implement comprehensive testing strategies and optimize user experience through detailed UX/UI analysis, ensuring bug-free and intuitive applications.",
+    icon: <i className="fi fi-ts-quiz-alt"></i>,
+  },
+];
+
+export const baseDetails = [
+  {
+    icon: <i className="fi fi-rr-phone-flip"></i>,
+    value: "+91 7397687841",
+  },
+  {
+    icon: <i className="fi fi-rr-at"></i>,
+    value: "agr.angaleesh@gmail.com",
+  },
+  {
+    icon: <i className="fi fi-rr-marker"></i>,
+    value:
+      "8, Sahaya Nagar, Megarali Veethi, Gandhi Nagar, Vellalore, Coimbatore - 641111",
+  },
+];
+
+export const EducationDetails = [
+  {
+    year: "2020 - 2023",
+    university: "RVS College of arts and science -sulur",
+    degree: "Bachelor of Computer Application",
+  },
+];
+export const ExperienceDetails = [
+  {
+    year: "JUN 2023 - PRESENT",
+    company: "Avanexa Technologies",
+    role: "Software Engineer",
   },
 ];

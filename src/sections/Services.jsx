@@ -18,7 +18,7 @@ const Services = () => {
       </p>
       <div className="flex flex-col">
         {serviceContent.map((item) => (
-          <div className="flex lg:gap-5 w-full border-dashed border-b-2 text-slate max-lg:flex-col py-5">
+          <div className="flex lg:gap-5 w-full border-dashed border-b-[1px] text-slate max-lg:flex-col py-5">
             <p className="stroke-text text-5xl w-16">{item.count}</p>
             <div className="flex flex-col justify-center items-start text-coreblack w-32">
               {item.icon}

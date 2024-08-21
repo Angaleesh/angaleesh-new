@@ -8,6 +8,8 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import MyWorks from "./sections/MyWorks";
 import Services from "./sections/Services";
+import Resume from "./sections/Resume";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -19,15 +21,17 @@ function App() {
         <div className="h-screen before:animate-bgLine border-r border-gray relative"></div>
         <div className="h-screen before:animate-bgLine "></div>
       </section>
-      <main className="mx-auto w-[95%] lg:w-[68%]  z-1  h-screen relative flex flex-col gap-5">
+      <main className="mx-auto w-[95%] lg:max-w-[85%]  z-1 h-screen relative flex flex-col gap-5">
         <Header />
-        <section className="w-full flex gap-5 max-lg:flex-col">
+        <section className="w-full flex gap-5 relative max-lg:flex-col">
           <Sidebar />
           <div className="flex flex-col card-grid gap-5 max-lg:w-full">
             <About />
             <Skills />
             <Services />
             <MyWorks />
+            <Resume />
+            <Contact />
           </div>
         </section>
       </main>

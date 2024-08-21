@@ -4,7 +4,7 @@
 @import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-straight/css/uicons-thin-straight.css");
 @import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css");
 @import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-straight/css/uicons-solid-straight.css");
-@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-rounded/css/uicons-thin-rounded.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -134,5 +134,14 @@ p {
   }
   .active-tab {
     @apply !text-white;
+  }
+  .button {
+    @apply bg-coreblack rounded-full text-white py-2 tracking-wide text-sm;
+  }
+  .input {
+    @apply border-b-[1px] border-dashed pb-2 text-slate;
+  }
+  .input:focus-visible{
+    @apply border-b-[1px] border-dashed pb-2 text-black outline-none;
   }
 }
