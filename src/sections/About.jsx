@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "./../assets/profile.jpg";
+import profile from "./../assets/Profile.jpg";
 import { badges, major } from "../info.jsx";
 const About = () => {
   return (
