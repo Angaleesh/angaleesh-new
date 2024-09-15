@@ -46,7 +46,6 @@ const Skills = () => {
                   item?.key * 100
                 }ms]`}
                 key={item.key}
-                data-aos="flip-up"
               >
                 <img
                   src={item.icon}
