@@ -1,9 +1,9 @@
 import React from "react";
-import { serviceContent } from "../info";
+import { serviceContent } from "../utils/info";
 
 const Services = () => {
   return (
-    <div className="card w-full flex flex-col gap-5" id="services">
+    <div className="card w-full flex flex-col gap-5" data-aos="fade-up" id="services">
       <h2
         className="title-heading relative w-full text-sm "
         data-backdrop-text="Services"

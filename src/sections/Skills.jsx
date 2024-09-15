@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { skillGroup, skillicons } from "../info";
+import { skillGroup, skillicons } from "../utils/info";
 
 const Skills = () => {
   const [group, setGroup] = useState("All");
   return (
-    <div className="card w-full flex flex-col gap-5" id="portfolio">
+    <div
+      className="card w-full flex flex-col gap-5"
+      id="portfolio"
+      data-aos="fade-up"
+      data-aos-duration="4500"
+    >
       <h2
         className="title-heading relative w-full text-sm "
         data-backdrop-text="Portfolio"
@@ -21,7 +26,9 @@ const Skills = () => {
         {skillGroup.map((item, i) => (
           <div
             className={`flex justify-between items-center gap-2 px-4 py-1 cursor-pointer border-dotted border rounded-full ${
-              group === item && `bg-black text-white border-none`
+              group === item
+                ? `bg-black  text-white hover:text-white border-none`
+                : "hover:text-black"
             }`}
             key={i}
             onClick={() => setGroup(item)}
@@ -35,8 +42,11 @@ const Skills = () => {
           (item) =>
             item.group.includes(group) && (
               <div
-                className={`card flex  items-center gap-2 py-2 cursor-pointer hover:scale-110 h-16 animate-skew delay-[1500ms] delay-[${item?.key*100}ms]`}
+                className={`card flex  items-center gap-2 py-2 cursor-pointer hover:scale-110 h-16 animate-skew delay-[1500ms] delay-[${
+                  item?.key * 100
+                }ms]`}
                 key={item.key}
+                data-aos="flip-up"
               >
                 <img
                   src={item.icon}

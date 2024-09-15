@@ -1,19 +1,19 @@
-import albionWeb from "./assets/projects/wall360.png";
-import genieWeb from "./assets/projects/genie-web.png";
-import bankWeb from "./assets/projects/bank-web.png";
-import medbay from "./assets/projects/medbay.png";
-import treffer from "./assets/projects/treffer.png";
-import credit from "./assets/projects/credit.png";
-import nike from "./assets/projects/nike.png";
-import quickeat from "./assets/projects/quickeat.png";
-import smileshop from "./assets/projects/smile-shop.png";
-import eyeguru from "./assets/projects/eyeguru.png";
-import shopeasey from "./assets/projects/shopeasey.png";
-import kitstop from "./assets/projects/kitstop-web.png";
-import saj from "./assets/projects/saj-mobile.jpg";
-import brandmax from "./assets/projects/brandmax-mobile.jpg";
-import fobes from "./assets/projects/fobes.jpg";
-import skillAssets from "./assets/skills";
+import albionWeb from "./../assets/projects/wall360.png";
+import genieWeb from "./../assets/projects/genie-web.png";
+import bankWeb from "./../assets/projects/bank-web.png";
+import medbay from "./../assets/projects/medbay.png";
+import treffer from "./../assets/projects/treffer.png";
+import credit from "./../assets/projects/credit.png";
+import nike from "./../assets/projects/nike.png";
+import quickeat from "./../assets/projects/quickeat.png";
+import smileshop from "./../assets/projects/smile-shop.png";
+import eyeguru from "./../assets/projects/eyeguru.png";
+import shopeasey from "./../assets/projects/shopeasey.png";
+import kitstop from "./../assets/projects/kitstop-web.png";
+import saj from "./../assets/projects/saj-mobile.jpg";
+import brandmax from "./../assets/projects/brandmax-mobile.jpg";
+import fobes from "./../assets/projects/fobes.jpg";
+import skillAssets from "../assets/skills";
 export const sidebarContents = [
   {
     name: "About me",
@@ -213,18 +213,22 @@ export const major = [
   {
     name: "React",
     icon: <i className="fi fi-ts-react"></i>,
+    color: "#61dbfb",
   },
   {
     name: "Node JS",
     icon: <i className="fi fi-brands-node-js"></i>,
+    color: "#336633",
   },
   {
     name: "PHP",
     icon: <i className="fi fi-brands-php"></i>,
+    color: "#4f5b93",
   },
   {
     name: "AWS",
     icon: <i className="fi fi-rr-cloud-upload-alt"></i>,
+    color: "#FF9900",
   },
 ];
 

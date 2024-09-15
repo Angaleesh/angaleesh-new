@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { baseDetails } from "../info";
+import { baseDetails } from "../utils/info";
 
 const Contact = () => {
   const [disable, setdisable] = useState(false);
@@ -22,7 +22,11 @@ const Contact = () => {
       );
   };
   return (
-    <div className="card w-full flex flex-col gap-5" id="contact">
+    <div
+      className="card w-full flex flex-col gap-5 animate-fadeIn1"
+      data-aos="fade-up"
+      id="contact"
+    >
       <h2
         className="title-heading relative w-full text-sm "
         data-backdrop-text="Get In Touch"

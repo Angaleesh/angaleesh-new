@@ -1,10 +1,15 @@
 import React from "react";
-import profile from "./../assets/Profile.jpg";
-import { badges, major } from "../info.jsx";
+import profile from "./../assets/img.jpg";
+import { badges, major } from "../utils/info.jsx";
 import { Link } from "react-router-dom";
+import NumberCounter from "../utils/NumberCounter.jsx";
 const About = () => {
   return (
-    <div className="card w-full flex flex-col gap-5" id="about">
+    <div
+      className="card w-full flex flex-col gap-5"
+      data-aos="fade-up"
+      id="about"
+    >
       <div className="flex gap-10 items-center max-lg:flex-col">
         <div className="lg:w-1/3">
           <img
@@ -12,7 +17,7 @@ const About = () => {
             alt="profile"
             width={250}
             height={250}
-            className="rounded-full aspect-square object-cover"
+            className="rounded-full aspect-square object-cover object-top"
           />
         </div>
         <div className="flex flex-col gap-5 lg:w-2/3">
@@ -33,13 +38,19 @@ const About = () => {
             </a>
           </h6>
           <div className="flex gap-5 text-slate flex-wrap">
-            {major.map((item, index) => (
+            {major.map(({ color, name, icon }, index) => (
               <div
-                className="flex justify-between items-center gap-2 px-4 py-1 border-dotted border rounded-full"
+                className={`flex justify-between major items-center gap-2 px-4 py-1 text-slate border-dotted border cursor-pointer rounded-full`}
+                style={{ "--hover-color": color }}
                 key={index}
               >
-                {item?.icon}
-                <p>{item?.name}</p>
+                <style jsx>{`
+                  .major:hover {
+                    color: var(--hover-color);
+                  }
+                `}</style>
+                {icon}
+                <p>{name}</p>
               </div>
             ))}
           </div>
@@ -53,7 +64,9 @@ const About = () => {
       <div className="flex w-full gap-20 p-5  flex-wrap">
         {badges.map((item, index) => (
           <div className="h-fit flex gap-2" key={index}>
-            <p className="stroke-text text-5xl ">{item.count}</p>
+            <p className="stroke-text text-5xl ">
+              <NumberCounter endNumber={item.count} speed={100} />
+            </p>
             <div className="flex flex-col justify-evenly">
               <p className="font-outfit text-lg leading-tight">{item.unit}</p>
               <p className="text-md font-outfit leading-tight">

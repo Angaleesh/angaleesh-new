@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { projectGroup, projectList } from "../info";
+import { projectGroup, projectList } from "../utils/info";
 import { Link } from "react-router-dom";
 
 const MyWorks = () => {
   const [group, setGroup] = useState("All");
   return (
-    <div className="card w-full flex flex-col gap-5" id="my-works">
+    <div
+      className="card w-full flex flex-col gap-5"
+      data-aos="fade-up"
+      id="my-works"
+    >
       <h2
         className="title-heading relative w-full text-sm "
         data-backdrop-text="My Works"
@@ -22,7 +26,9 @@ const MyWorks = () => {
         {projectGroup.map((item, i) => (
           <div
             className={`flex justify-between items-center gap-2 px-4 py-1 cursor-pointer border-dotted border rounded-full ${
-              group === item && `bg-black text-white border-none`
+              group === item
+                ? `bg-black text-white border-none`
+                : "hover:text-black"
             }`}
             key={i}
             onClick={() => setGroup(item)}

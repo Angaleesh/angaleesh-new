@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { sidebarContents } from "../info.jsx";
+import { sidebarContents } from "../utils/info.jsx";
 import { Link } from "react-scroll";
 
 const Sidebar = () => {
@@ -23,6 +23,7 @@ const Sidebar = () => {
   }, []);
   return (
     <aside
+      data-aos="fade-right"
       className={` ${
         fixed && `max-lg:fixed top-8 max-lg:z-[999] max-lg:w-[95%] `
       }`}

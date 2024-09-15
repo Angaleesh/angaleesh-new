@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header id="about">
-      <div className="flex justify-end gap-5">
+      <div className="flex justify-end gap-5" data-aos="fade-left">
         <a
           target="_blank"
           href="https://github.com/Angaleesh"
@@ -26,7 +26,7 @@ const Header = () => {
           <i className="fi fi-brands-linkedin"></i>
         </a>
       </div>
-      <div className="flex gap-2 mt-2 py-4">
+      <div className="flex gap-2 mt-2 py-4" data-aos="fade-down">
         <h1 className="text-6xl max-lg:text-5xl max-md:text-3xl font-semibold">
           Angaleeshwara&nbsp;
           <span className=" stroke-text font-bold">Gandhi</span>

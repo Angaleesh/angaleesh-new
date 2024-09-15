@@ -1,9 +1,9 @@
 import React from "react";
-import { EducationDetails, ExperienceDetails } from "../info";
+import { EducationDetails, ExperienceDetails } from "../utils/info";
 
 const Resume = () => {
   return (
-    <div className="card w-full flex flex-col gap-5" id="resume">
+    <div className="card w-full flex flex-col gap-5" data-aos="fade-up" id="resume">
       <h2
         className="title-heading relative w-full text-sm "
         data-backdrop-text="Resume"
