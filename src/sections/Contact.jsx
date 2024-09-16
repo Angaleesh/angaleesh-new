@@ -73,7 +73,7 @@ const Contact = () => {
         {baseDetails.map((item, index) => (
           <a
             href={item?.href}
-            className="flex justify-between items-center gap-2 px-4 py-1 border-dotted border rounded-full"
+            className="flex justify-between items-center gap-2 px-4 py-1 border-dotted border rounded-full hover:font-semibold hover:text-white hover:bg-black duration-300"
             key={index}
           >
             {item?.icon}
@@ -118,7 +118,7 @@ const Contact = () => {
           key={"message"}
           name={"message"}
           placeholder="Message"
-          className="input h-36"
+          className="input max-h-56 h-36 min-h-8"
         />
         <button
           disabled={disable}

@@ -319,7 +319,7 @@ export const skillicons = [
     key: 10,
     name: "PHP",
     icon: skillAssets?.php,
-    group: ["Server", "All"],
+    group: ["Server", "All", "Languages"],
   },
   {
     key: 11,

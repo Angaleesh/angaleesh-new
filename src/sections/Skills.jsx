@@ -42,9 +42,7 @@ const Skills = () => {
           (item) =>
             item.group.includes(group) && (
               <div
-                className={`card flex  items-center gap-2 py-2 cursor-pointer hover:scale-110 h-16 animate-skew delay-[1500ms] delay-[${
-                  item?.key * 100
-                }ms]`}
+                className={`card flex  items-center gap-2 py-2 cursor-pointer hover:scale-110 h-16 `}
                 key={item.key}
               >
                 <img
