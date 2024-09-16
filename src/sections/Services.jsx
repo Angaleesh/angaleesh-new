@@ -3,7 +3,11 @@ import { serviceContent } from "../utils/info";
 
 const Services = () => {
   return (
-    <div className="card w-full flex flex-col gap-5" data-aos="fade-up" id="services">
+    <div
+      className="card w-full flex flex-col gap-5"
+      data-aos="fade-up"
+      id="services"
+    >
       <h2
         className="title-heading relative w-full text-sm "
         data-backdrop-text="Services"
@@ -17,8 +21,11 @@ const Services = () => {
         leverage these skills in meaningful ways.
       </p>
       <div className="flex flex-col">
-        {serviceContent.map((item) => (
-          <div className="flex lg:gap-5 w-full border-dashed border-b-[1px] text-slate max-lg:flex-col py-5">
+        {serviceContent.map((item, i) => (
+          <div
+            className="flex lg:gap-5 w-full border-dashed border-b-[1px] text-slate max-lg:flex-col py-5"
+            key={i}
+          >
             <p className="stroke-text text-5xl w-16">{item.count}</p>
             <div className="flex flex-col justify-center items-start text-coreblack w-32">
               {item.icon}

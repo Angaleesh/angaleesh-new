@@ -70,6 +70,32 @@ export default {
             transform: "scaleY(1)",
           },
         },
+        boxAnimation: {
+          "0%": {
+            transform: "translateX(-140px) scaleX(0)",
+          },
+          "50%": {
+            transform: "translateX(140px) scaleX(1)",
+          },
+
+          "100%": {
+            transform: "translateX(-140px) scaleX(0)",
+          },
+        },
+        boxAnimationText: {
+          "0%": {
+            transform: "translateX(-140px)",
+            opacity: 0,
+          },
+          "50%": {
+            transform: "translateX(140px)",
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateX(0) ",
+          },
+        },
         spin2: {
           "0%": {
             transform: "translate(-50%, -50%) rotate(0)",
@@ -90,6 +116,8 @@ export default {
         fadeInOut3: "fadeInOut 1500ms ease-in-out",
         spin2: "spin2 10s linear infinite",
         skew: "skew 300ms ease-in-out",
+        box: "boxAnimation 1500ms ease-in-out",
+        boxText: "boxAnimationText 1500ms ease-in-out",
       },
     },
   },

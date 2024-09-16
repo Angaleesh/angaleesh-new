@@ -33,8 +33,8 @@ const About = () => {
               href="https://drive.usercontent.google.com/u/0/uc?id=1dcEAza2GmYF56GQ8DnJngrfYLCJ915ot&export=download"
               className="text-sm ml-5 "
             >
-              Resume
-              <i class="fi fi-bs-cloud-download ml-1 rounded "></i>
+              <span className="my-auto">Resume</span>
+              <i className="fi fi-bs-cloud-download ml-1 rounded text-xl pt-2"></i>
             </a>
           </h6>
           <div className="flex gap-5 text-slate flex-wrap">
@@ -44,7 +44,7 @@ const About = () => {
                 style={{ "--hover-color": color }}
                 key={index}
               >
-                <style jsx>{`
+                <style jsx="true">{`
                   .major:hover {
                     color: var(--hover-color);
                   }

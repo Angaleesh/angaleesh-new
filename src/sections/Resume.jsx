@@ -3,7 +3,11 @@ import { EducationDetails, ExperienceDetails } from "../utils/info";
 
 const Resume = () => {
   return (
-    <div className="card w-full flex flex-col gap-5" data-aos="fade-up" id="resume">
+    <div
+      className="card w-full flex flex-col gap-5"
+      data-aos="fade-up"
+      id="resume"
+    >
       <h2
         className="title-heading relative w-full text-sm "
         data-backdrop-text="Resume"
@@ -20,10 +24,9 @@ const Resume = () => {
         <div className="flex flex-col gap-5">
           <i className="fi fi-rr-graduation-cap text-3xl"></i>
           {EducationDetails.map((item, i) => (
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2" key={i}>
               <div
                 className={`flex justify-between items-center gap-2 px-4 py-1 cursor-pointer border-dotted border rounded-full w-fit`}
-                key={i}
               >
                 <p className="text-sm">{item.year}</p>
               </div>
@@ -39,7 +42,7 @@ const Resume = () => {
           <i className="fi fi-rr-briefcase text-3xl"></i>
 
           {ExperienceDetails.map((item, i) => (
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2" key={i}>
               <div
                 className={`flex justify-between items-center gap-2 px-4 py-1 cursor-pointer border-dotted border rounded-full w-fit`}
                 key={i}

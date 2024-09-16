@@ -54,7 +54,10 @@ const MyWorks = () => {
                   </h2>
                   <div className="flex gap-2">
                     {item.type.map((i) => (
-                      <span className="py-1 px-2 border rounded-md text-sm">
+                      <span
+                        className="py-1 px-2 border rounded-md text-sm"
+                        key={i}
+                      >
                         {i}
                       </span>
                     ))}
@@ -63,12 +66,12 @@ const MyWorks = () => {
                 <div className="">
                   <div className="flex flex-col w-32">
                     {item.about.map((i) => (
-                      <p className="text-sm">{i}</p>
+                      <p className="text-sm"  key={i}>{i}</p>
                     ))}
                   </div>
                   <div className="flex gap-1 items-center mt-2">
                     {item.stack.map((i) => (
-                      <img src={i} className="" width={15} />
+                      <img src={i} className="" width={15}  key={i}/>
                     ))}
                   </div>
                 </div>
