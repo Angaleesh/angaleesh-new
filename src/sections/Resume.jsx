@@ -16,9 +16,10 @@ const Resume = () => {
       </h2>
       <h5 className="section-heading">Education & Experience</h5>
       <p className="section-content max-w-[600px]">
-        My journey has equipped me with a diverse skill set, ranging from
-        front-end development to server-side solutions, and I'm excited to
-        leverage these skills in meaningful ways.
+        I’ve had the
+        privilege of working on a variety of fullstack projects, each one
+        offering a unique set of challenges that allowed me to hone my skills
+        and deliver results-driven solutions.
       </p>
       <div className="flex gap-10 flex-wrap">
         <div className="flex flex-col gap-5">

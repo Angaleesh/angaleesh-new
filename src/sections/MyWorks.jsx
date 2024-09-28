@@ -18,9 +18,10 @@ const MyWorks = () => {
       </h2>
       <h5 className="section-heading">Projects Done</h5>
       <p className="section-content max-w-[600px]">
-        My journey has equipped me with a diverse skill set, ranging from
-        front-end development to server-side solutions, and I'm excited to
-        leverage these skills in meaningful ways.
+        Throughout my career, I’ve had the opportunity to work on a diverse
+        range of projects, each designed to solve unique challenges and deliver
+        impactful solutions. I approach every project with a focus on
+        innovation, scalability, and user experience.
       </p>
       <div className="flex gap-3 flex-wrap text-slate">
         {projectGroup.map((item, i) => (
@@ -66,12 +67,14 @@ const MyWorks = () => {
                 <div className="">
                   <div className="flex flex-col w-32">
                     {item.about.map((i) => (
-                      <p className="text-sm"  key={i}>{i}</p>
+                      <p className="text-sm" key={i}>
+                        {i}
+                      </p>
                     ))}
                   </div>
                   <div className="flex gap-1 items-center mt-2">
                     {item.stack.map((i) => (
-                      <img src={i} className="" width={15}  key={i}/>
+                      <img src={i} className="" width={15} key={i} />
                     ))}
                   </div>
                 </div>

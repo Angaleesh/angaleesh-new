@@ -16,9 +16,10 @@ const Services = () => {
       </h2>
       <h5 className="section-heading">What I Do</h5>
       <p className="section-content max-w-[600px]">
-        My journey has equipped me with a diverse skill set, ranging from
-        front-end development to server-side solutions, and I'm excited to
-        leverage these skills in meaningful ways.
+        I offer a comprehensive range of fullstack development services,
+        tailored to meet the specific needs of businesses and individuals. With
+        a focus on creating scalable, secure and user-friendly solutions, I aim
+        to bring your ideas to life through technology.
       </p>
       <div className="flex flex-col">
         {serviceContent.map((item, i) => (

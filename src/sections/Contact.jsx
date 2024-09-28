@@ -65,9 +65,9 @@ const Contact = () => {
       </h2>
       <h5 className="section-heading">Let's Connect</h5>
       <p className="section-content max-w-[600px]">
-        My journey has equipped me with a diverse skill set, ranging from
-        front-end development to server-side solutions, and I'm excited to
-        leverage these skills in meaningful ways.
+        I’m always open to discussing new projects, creative ideas, or
+        opportunities to be part of your vision. Feel free to reach out to me
+        through any of the following channels:
       </p>
       <div className="flex flex-wrap gap-2 text-slate   ">
         {baseDetails.map((item, index) => (
