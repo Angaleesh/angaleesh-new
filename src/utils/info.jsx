@@ -2,6 +2,8 @@ import albionWeb from "./../assets/projects/wall360.png";
 import genieWeb from "./../assets/projects/genie-web.png";
 import bankWeb from "./../assets/projects/bank-web.png";
 import medbay from "./../assets/projects/medbay.png";
+import cignix from "./../assets/projects/cignix.png";
+import mrj from "./../assets/projects/mrj.jpg";
 import treffer from "./../assets/projects/treffer.png";
 import credit from "./../assets/projects/credit.png";
 import nike from "./../assets/projects/nike.png";
@@ -88,23 +90,12 @@ export const projectList = [
     type: ["web", "mobile"],
   },
   {
-    key: 5,
-    title: "Shopeasey",
-    stack: [skillAssets?.nodejs, skillAssets?.react],
-    desc: "Lorem ipsum",
-    group: ["All", "Industrial"],
-    about: ["Backend "],
-    image: shopeasey,
-    link: "https://shopeasey.com",
-    type: ["web", "mobile"],
-  },
-  {
     key: 6,
     title: "Saj Surveyors",
     stack: [skillAssets?.codeigniter],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
-    about: ["Backend ", "Admin Panel"],
+    about: ["Backend", "Admin Panel"],
     image: saj,
     type: ["mobile"],
   },
@@ -152,6 +143,29 @@ export const projectList = [
     link: "https://kitstop.in",
     type: ["web", "mobile"],
   },
+  {
+    key: 11,
+    title: "MR Jewellers",
+    stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
+    desc: "Lorem ipsum",
+    group: ["All", "Industrial"],
+    about: ["Backend"],
+    image: mrj,
+    link: "https://mrbrothers.com",
+    type: ["mobile"],
+  },
+  {
+    key: 11,
+    title: "CIGNIX",
+    stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
+    desc: "Lorem ipsum",
+    group: ["All", "Industrial"],
+    about: ["Backend", "Admin Panel"],
+    image: cignix,
+    link: "https://cignix.com",
+    type: ["web", "mobile"],
+  },
+
   {
     key: 11,
     title: "Eyeguru",
