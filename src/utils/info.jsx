@@ -144,7 +144,7 @@ export const projectList = [
     type: ["web", "mobile"],
   },
   {
-    key: 11,
+    key: 5,
     title: "MR Jewellers",
     stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
     desc: "Lorem ipsum",
@@ -155,7 +155,7 @@ export const projectList = [
     type: ["mobile"],
   },
   {
-    key: 11,
+    key: 16,
     title: "CIGNIX",
     stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
     desc: "Lorem ipsum",
