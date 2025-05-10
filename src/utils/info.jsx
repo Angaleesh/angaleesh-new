@@ -10,6 +10,7 @@ import nike from "./../assets/projects/nike.png";
 import quickeat from "./../assets/projects/quickeat.png";
 import smileshop from "./../assets/projects/smile-shop.png";
 import eyeguru from "./../assets/projects/eyeguru.png";
+import sikmahomes from "./../assets/projects/sikmahomes.png";
 import shopeasey from "./../assets/projects/shopeasey.png";
 import kitstop from "./../assets/projects/kitstop-web.png";
 import saj from "./../assets/projects/saj-mobile.jpg";
@@ -178,6 +179,17 @@ export const projectList = [
     type: ["web"],
   },
   {
+    key: 11,
+    title: "Sikmahomes",
+    stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.next],
+    desc: "Lorem ipsum",
+    group: ["All", "Freelance"],
+    about: ["Frontend ", "Backend ", "Admin Panel", "Cloud"],
+    image: sikmahomes,
+    link: "https://sikmahomes.com",
+    type: ["web"],
+  },
+  {
     key: 12,
     title: "Smile Shop",
     stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
@@ -248,7 +260,7 @@ export const major = [
 
 export const badges = [
   {
-    count: 1,
+    count: 2,
     unit: "+",
     content: "Year of Experience",
   },
@@ -258,7 +270,7 @@ export const badges = [
     content: "Projects Done",
   },
   {
-    count: 20,
+    count: 25,
     unit: "+",
     content: "Skills Achieved",
   },
@@ -419,6 +431,24 @@ export const skillicons = [
     icon: skillAssets?.aws,
     group: ["All", "Cloud"],
   },
+  {
+    key: 25,
+    name: "Figma",
+    icon: skillAssets?.figma,
+    group: ["All"],
+  },
+  {
+    key: 26,
+    name: "Next js",
+    icon: skillAssets?.next,
+    group: ["All", "Client"],
+  },
+  {
+    key: 27,
+    name: "React Native",
+    icon: skillAssets?.reactNative,
+    group: ["All", "Client"],
+  },
 ];
 
 export const serviceContent = [
@@ -465,8 +495,7 @@ export const baseDetails = [
   },
   {
     icon: <i className="fi fi-rr-marker"></i>,
-    value:
-      "8, Sahaya Nagar, Megarali Veethi, Gandhi Nagar, Vellalore, Coimbatore - 641111",
+    value: "5/4 A, Ashokar Street, Maruthur, Vellalore, Coimbatore - 641111",
   },
 ];
 
@@ -479,8 +508,13 @@ export const EducationDetails = [
 ];
 export const ExperienceDetails = [
   {
-    year: "JUN 2023 - PRESENT",
+    year: "JUN 2023 - JAN 2025",
     company: "Avanexa Technologies",
     role: "Software Engineer",
+  },
+  {
+    year: "JAN 2025 - PRESENT",
+    company: "Ellucian",
+    role: "Associate Consultant",
   },
 ];

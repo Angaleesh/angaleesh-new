@@ -2,6 +2,7 @@ import antd from "./antd.svg";
 import redis from "./redis.svg";
 import postgresql from "./postgresql.svg";
 import tailwind from "./tailwind.svg";
+import next from "./next.svg";
 import bootstrap from "./bootstrap.png";
 import codeigniter from "./codeigniter.png";
 import css from "./css.png";
@@ -22,9 +23,15 @@ import tsoa from "./tsoa.png";
 import mongodb from "./mongodb.png";
 import sass from "./sass.png";
 import aws from "./aws.png";
+import plsql from "./plsql.png";
+import reactNative from "./react-native.png";
+import figma from "./figma.png";
 
 export default {
   antd,
+  figma,
+  reactNative,
+  plsql,
   tailwind,
   express,
   bootstrap,
@@ -32,6 +39,7 @@ export default {
   codeigniter,
   css,
   aws,
+  next,
   html,
   java,
   redis,

@@ -52,7 +52,7 @@ const Contact = () => {
   };
   return (
     <div
-      className="card w-full flex flex-col gap-5 animate-fadeIn1"
+      className="card w-full flex flex-col gap-5 animate-fadeIn1 mb-10"
       data-aos="fade-up"
       id="contact"
     >

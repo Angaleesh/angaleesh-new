@@ -16,13 +16,12 @@ const Resume = () => {
       </h2>
       <h5 className="section-heading">Education & Experience</h5>
       <p className="section-content max-w-[600px]">
-        I’ve had the
-        privilege of working on a variety of fullstack projects, each one
-        offering a unique set of challenges that allowed me to hone my skills
-        and deliver results-driven solutions.
+        I’ve had the privilege of working on a variety of fullstack projects,
+        each one offering a unique set of challenges that allowed me to hone my
+        skills and deliver results-driven solutions.
       </p>
       <div className="flex gap-10 flex-wrap">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-1/3">
           <i className="fi fi-rr-graduation-cap text-3xl"></i>
           {EducationDetails.map((item, i) => (
             <div className="flex flex-col gap-2" key={i}>
@@ -36,10 +35,11 @@ const Resume = () => {
                 <i className="fi fi-rr-at"></i>
                 {item.university}
               </p>
+              <hr className="text-gray" />
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5  w-1/3">
           <i className="fi fi-rr-briefcase text-3xl"></i>
 
           {ExperienceDetails.map((item, i) => (
@@ -55,6 +55,7 @@ const Resume = () => {
                 <i className="fi fi-rr-at"></i>
                 {item.company}
               </p>
+              <hr className="text-gray" />
             </div>
           ))}
         </div>
