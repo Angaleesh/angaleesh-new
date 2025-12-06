@@ -48,7 +48,7 @@ export const projectGroup = ["All", "Industrial", "Personal", "Freelance"];
 export const projectList = [
   {
     key: 1,
-    title: "Wall360",
+    title: "Realestate Web App",
     stack: [skillAssets?.codeigniter, skillAssets?.react],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -59,7 +59,7 @@ export const projectList = [
   },
   {
     key: 2,
-    title: "Genie Arabia",
+    title: "UAE Ecommerce Platform",
     stack: [skillAssets?.nodejs, skillAssets?.react],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -70,7 +70,7 @@ export const projectList = [
   },
   {
     key: 3,
-    title: "Albion Bank Auctions",
+    title: "Auctions Platform",
     stack: [skillAssets?.codeigniter, skillAssets?.laravel],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -81,7 +81,7 @@ export const projectList = [
   },
   {
     key: 4,
-    title: "Fobes",
+    title: "Job Portal",
     stack: [skillAssets?.nodejs, skillAssets?.laravel],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -92,7 +92,7 @@ export const projectList = [
   },
   {
     key: 6,
-    title: "Saj Surveyors",
+    title: "Document Management System",
     stack: [skillAssets?.codeigniter],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -102,7 +102,7 @@ export const projectList = [
   },
   {
     key: 7,
-    title: "Brandmax",
+    title: "Ecommerce Mobile App",
     stack: [skillAssets?.codeigniter],
     desc: "Lorem ipsum",
     about: ["Backend ", "Admin Panel"],
@@ -113,7 +113,7 @@ export const projectList = [
   },
   {
     key: 8,
-    title: "Medbay",
+    title: "Medical Ecommerce",
     stack: [skillAssets?.opencart, skillAssets?.php],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -124,7 +124,7 @@ export const projectList = [
   },
   {
     key: 9,
-    title: "Treffer",
+    title: "Catalog Ecommerce",
     stack: [skillAssets?.opencart, skillAssets?.php],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -135,7 +135,7 @@ export const projectList = [
   },
   {
     key: 10,
-    title: "Kitstop",
+    title: "Sports Ecommerce",
     stack: [skillAssets?.opencart, skillAssets?.php],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -146,7 +146,7 @@ export const projectList = [
   },
   {
     key: 5,
-    title: "MR Jewellers",
+    title: "Jewellery Ecommerce",
     stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -157,7 +157,7 @@ export const projectList = [
   },
   {
     key: 16,
-    title: "CIGNIX",
+    title: "Quit Smoke helper",
     stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
     desc: "Lorem ipsum",
     group: ["All", "Industrial"],
@@ -168,7 +168,7 @@ export const projectList = [
   },
 
   {
-    key: 11,
+    key: 17,
     title: "Eyeguru",
     stack: [skillAssets?.nodejs, skillAssets?.react, skillAssets?.ts],
     desc: "Lorem ipsum",
@@ -485,8 +485,8 @@ export const serviceContent = [
 export const baseDetails = [
   {
     icon: <i className="fi fi-rr-phone-flip"></i>,
-    href: "tel:7397687841",
-    value: "+91 7397687841",
+    href: "tel:7200320066",
+    value: "+91 7200 3200 66",
   },
   {
     icon: <i className="fi fi-rr-at"></i>,
